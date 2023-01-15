@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        {% load static%}
+    <link rel="stylesheet" href="{% static 'login.css'%}">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@100;500;700&family=Zen+Maru+Gothic&display=swap" rel="stylesheet"> 
+
+
+
+    </head>
+    <body>
+        <section class="container" >
+            <div >
+                <div class="haoimg">
+                    <h1 class="reg"><img src="../static/images/logo 1(2).png" alt=""> HaoTai</h1>
+                </div>
+            </div>
+            <form class="form" method="POST">
+                <div class="box">
+                    {{form}}
+                    {% csrf_token %}
+                    
+                    <button class="submit">Login</button>
+             </div>
+            </form>
+            <a href="" class="forgot">Forgot Password?</a>
+            <div class="loginn">
+                <div>
+                    <a href="{% url 'signup' %}"><h3 class="submit">Signup</h3></a>
+                </div>
+            </div>
+                
+        </section>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(to top right,#7B0D1E 0%,#DB7F8E 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+.form{ 
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
+    margin: 30px;
+    color: #525252;
+}
+.container{
+    background-color: white;
+    max-width: 45%;
+    border-radius: 8px;
+    padding: 55px;
+    
+    
+}
+.box label{
+    font-size: 22px;
+}
+.centre label{
+    font-size: 22px;
+} 
+#option{
+    width: 100%;
+    padding: 8px;
+   
+}
+.loginn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 30px auto;
+}
+.reg{
+    padding:  0px;
+    color: #525252;
+    margin-left: 30px;
+}
+.subject{
+    padding: 30px;
+    color: #525252;
+}
+.forgot{
+    padding: 29px;
+}
+.submit{
+    text-align: center;
+    background: #fb3e3c;
+    border-radius: 5px;
+    width: 93px;
+    padding: 7px;
+    margin-left: 30px;
+    color: white;
+    
+  }
+.container a{
+    text-decoration: none;
+
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    
+}
+.haoimg h1{
+    display: flex;
+    font-size: 35px;
+}
+.centre{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 23px;
+
+}
+.inp{
+    padding: 12px;
+
+}
+#inp2{
+    width: 208px;
+}
+@media only screen and (max-width: 700px) {
+    .box{
+        display: grid;
+    }
+    .centre{
+        display: grid;
+    }
+    .form{
+        margin: 0;
+    }
+    .centre{
+        gap: 5px;
+    }
+    .box{
+        gap: 5px;
+    }
+    .submit{
+        width: 66px;
+        padding: 3px;
+        margin-left: 9px;
+        
+    }
+    .subject{
+        padding: 5px;
+    }
+    
+
+}
+
+

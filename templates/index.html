@@ -1,0 +1,124 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+
+    <section id="container">
+        <div class="ph">
+            <h2 class="heading1">Hao Tai</h2>
+            <p class="paragraph">Hao
+            Tai Int Co a partner of Asia's top financial group, is currently one of the <br> few overseas financial operating companies.</p>
+            <a href="" >
+                <h4 class="readme">
+                    <b> Read more </b>
+                </h4>
+            </a>
+            <div class="frame">
+                <div class="frame1">
+                    <h3>15000</h3>
+                    <h5>Num. of employes</h5>
+                </div>
+                <div class="frame1">
+                    <h3>MaeSot</h3>
+                    <h5>Location</h5>
+                </div>
+                <div class="frame1">
+                    <h3>430+</h3>
+                    <h5>Num. of Buildings</h5>
+                </div>
+                <div class="frame1">
+                    <h3>72 Acres</h3>
+                    <h5>Area</h5>
+                </div>
+            </div>
+        </div>
+        <div class="rect">
+            <img src="../static/images/Rectangle 7.png" alt="">
+        </div>
+    </section>
+
+    <h2 class="jobtext">Job Categories</h2>
+
+    
+
+    <section class="cateframes">
+        {% for Categories in cat %}
+       <div class="box1">
+            <div class="box2">
+                <img src={{Categories.images.url}} alt="" >
+                <h2>{{Categories.title}}</h2>
+                <p>{{Categories.descreption}}</p>  
+                <a href="{% url 'jobs' Categories.pk %}"><h4 class="cl">{{Categories.vaccency}} Job Vacancy</h4></a>
+            </div>
+        </div>
+       {% endfor %}
+        
+    </section>
+    
+   <section>
+
+   </section>
+
+
+      <section class="boxthree">
+            <div class="benefits1">
+                <h2>Benefits</h2>
+            </div>
+            <div class="boxthreefull">
+                <div class="beforearrival">
+                    <div><h3>Before Arrival </h3></div>
+                    <br>
+                    <div>
+                        <ul>
+                            <li>Flight ticket</li>
+                            <br>
+                            <li>Thai pass</li>
+                            <br>
+                            <li>Hotel Reservations</li>
+                            <br>
+                            <li>Insurance</li>
+                            <br>
+                            <li>Offer Letter</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="beforearrival">
+                    <div> <h3>After arrival to Thailand </h3> </div>
+                    <br>
+                    <div>
+                        <ul>
+                            <li>Cab Pick-up and all other transportation facilities</li>
+                            <br>
+                            <li>Hotel stay</li>
+                            <br>
+                            <li>Arrangement for Food</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="beforearrival">
+                    <div> <h3>During the work </h3></div>
+                    <br>
+                    <div>
+                        <ul>
+                            <li>Air-conditioned Accommodation and3 times meals a day</li>
+                            <br>
+                            <li>Personal cell phones with Internet</li>
+                            <br>
+                            <li>Paid time off (PTO) such as sick days and vacation days (15 days/6 months)</li>
+                            <br>
+                            <li>Professional development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+      </section>
+      {%endblock%}
+        
+
+   {% load static%}
+   <script src="{% static 'menu.js'%}"></script>
+
+</body>
+</html>

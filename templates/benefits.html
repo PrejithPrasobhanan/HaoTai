@@ -1,0 +1,104 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+
+
+    
+    <h1 class="cryptom">{{sect.title}}</h1>
+
+    <section class="cateframes">
+        <div class="box1">
+            <div class="boximg">
+                <img src={{sect.images.url}} alt="">
+            </div>
+             <div class="box0">
+                 <h2 class="crypton">{{sect.title}}</h2>
+                 <p>{{sect.descreption}}</p>
+                 <a href="#"><h4 class="cl">{{sect.vaccency}} Job Vacancy</h4></a>
+ 
+             </div>
+        </div>
+    </section>
+
+    <section class="boxthree">
+        <div class="benefits1">
+            <h3>Requirements</h3>
+        </div>
+        <div class="boxthreefull">
+            <div class="beforearrival">
+                <div><h3>Experience</h3></div>
+                <div>
+                    <ul>
+                        <li>{{sect.experience}}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="beforearrival">
+                <div> <h3> Documents</h3> </div>
+                <div>
+                    <ul>
+                        <li>{{sect.document}}</li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="beforearrival">
+                <div> <h3>Skills</h3></div>
+                <div>
+                    <ul>
+                        <li>{{sect.skill}}</li>
+                        
+                    </ul>
+                </div>
+            </div> 
+        </div> 
+    </section>
+
+    <section class="boxthree">
+    <div class="boxthreefull">
+        <div class="beforearrival">
+            <div><h3>Language</h3></div>
+            <div>
+                <ul>
+                    <li>{{sect.language}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="beforearrival">
+            <div> <h3> Salary</h3> </div>
+            <div>
+                <ul>
+                   
+                    <li>{{sect.salary}}</li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="beforearrival">
+            <div> <h3>Age</h3></div>
+            <div>
+                <ul>
+                    <li>Between 22 to 35</li>
+                   
+                    
+                </ul>
+            </div>
+        </div> 
+        
+        <a href="" ><h4 class="sendcv"><b> Send CV </b></h4></a>
+    </div> 
+    </section>
+
+  
+
+
+
+    {%endblock%}
+<script src="./menu.js"></script>
+
+</body>
+</html>

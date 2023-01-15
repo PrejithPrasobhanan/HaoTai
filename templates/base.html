@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Hao Tai</title>
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <link rel="stylesheet" href="{% static 'job.css'%}">
+    <link rel="stylesheet" href="{% static 'about.css'%}">
+    <link rel="stylesheet" href="{% static 'crypto.css'%}">
+
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="./favicon/site.webmanifest">
+<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+</head>
+<body>
+    <header class="container" >
+        <a href="#">
+            <img src="../static/images/logo 1(2).png" alt=>
+            <h2>Hao Tai</h2>
+        </a>
+        <nav class="nav1">
+            <ul class="ulmenu">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'jobss' %}">Jobs</a></li>
+                <li><a href="">Benifits</a></li>
+                {%if request.user.is_authenticated%}
+                <li><a href="">{{request.user.username}}</a></li>
+                <li><a href="{% url 'signout'%}">Logout</a></li>
+                {% else %}
+                <li><a href="{% url 'login'%}">Login</a></li>
+                <li><a href="{% url 'signup'%}">Signup</a></li>
+                {%endif%}
+            </ul>
+           
+        </nav>
+        <span id="hamburger">
+            <i>&#9776;</i>
+        </span>
+    </header>
+    <div  id="over" class="overlay">
+        <div  class="left">
+            <img src="../static/images/logo 1(2).png" alt="">
+            <ul id="jss">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'jobss' %}">Jobs</a></li>
+                <li><a href="#">Benifits</a></li>
+            </ul>
+        </div>
+        <br>
+        <div class="right">
+           <img src="../static/images/Frame 2.png" alt="" id="close">
+            <p>followus</p>
+            <div class="usimg">
+                <a href=""><img src="../static/images/instagram.png" alt=""></a>
+                <a href=""><img src="../static/images/Vector(6).png" alt=""></a>
+                <a href=""><img src="../static/images/Vector(8).png" alt=""></a>
+                <a href=""><img src="../static/images/mail.png" alt=""></a>
+    
+            </div>
+        </div>
+
+    </div>
+    {% block content %}
+    {%endblock%}
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="menu2">
+        <h2 class="footerhao">Hao Tai</h2>
+                <h4 class="link3">Links</h4>
+        
+            <ul>
+                <li class="link2"><a href="{% url 'home' %}">Home</a></li>
+                <li class="link2"><a href=".{% url 'about' %}">About</a></li>
+                <li class="link2"><a href="{% url 'jobss' %}">Jobs</a></li>
+                <li class="link2"><a href="#">Benifits</a></li>
+            </ul>
+        </div>
+        
+         <div class="followus1">
+            <h5 class="followtext">follow us</h5>
+            <br>
+            <div class="followus">
+                <a href=""><img src="../static/images/instagram.png" alt=""></a>
+                <a href=""><img src="../static/images/Vector(6).png" alt=""></a>
+                <a href=""><img src="../static/images/Vector(8).png" alt=""></a>
+                <a href=""><img src="../static/images/mail.png" alt=""></a>
+            </div>
+
+        </div>
+        </div>
+        
+   </footer>
+</body>
+</html>

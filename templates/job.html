@@ -1,0 +1,145 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+
+<h2 class="jobtext">Jobs</h2>
+
+<section class="cateframes">
+    {% for Categories in cat %}
+    <div class="box1">
+         <div class="box2">
+             <img src={{Categories.images.url}} alt="">
+             <h2>{{Categories.title}}</h2>
+             <p>{{Categories.descreption}}</p>  
+             <a href="{%url 'benefits' Categories.pk %}"><h4 class="cl">{{Categories.vaccency}} Job Vacancy</h4></a>
+         </div>
+     </div>
+    {% endfor %}
+     
+        <!-- <div class="box2">
+            <img src="../static/images/resources 1(1).png" alt="">
+            <h2>Human Resources</h2>
+            <p>Find and Recruit qualified candidates for the
+                company, Interview them and maintain records.</p>
+            <a href=""><h4 class="cl">100 Job Vacancy</h4></a>
+        </div>
+        <div class="box2">
+            <img src="../static/images/customer-support 1(1).png" alt="">
+            <h2>Promotion Models</h2>
+            <p>Answering customer’s questions, with warm and
+                thoughtful attitude and improve customer retention
+                through excellent support service.</p>
+            <a href=""><h4 class="cl">110 Job Vacancy</h4></a>
+        </div>
+        <div class="box2">
+            <img src="../static/images/sales-funnel 1(1).png" alt="">
+            <h2>Digital Sales and marketing</h2>
+            <p>Find people across the world and promote the tasks
+                company asks for, reach sales targets and perform marketing as well.</p>
+            <a href=""><h4 class="cl">90 Job Vacancy</h4></a>
+        </div>
+        <div class="box2">
+            <img src="../static/images/translator 1(1).png" alt="">
+            <h2>Translators</h2>
+            <p>Translating Chinese and English wherever required and
+                whenever asked for.</p>
+                <a href=""><h4 class="cl">70 Job Vacancy</h4></a>
+        </div>
+        <div class="box2">
+            <img src="../static/images/cryptocurrencies 1(1).png" alt="">
+            <h2>Crypto Promoters</h2>
+            <p>Convince Clients to invest Crypto currencies
+                through our company. Follow up the clients for
+                Investments and sales.</p>
+            <a href="./crypto.html"><h4 class="cl">120 Job Vacancy</h4></a>
+
+        </div>
+   </div>
+
+   <div class="box1">
+        <div class="box2">
+            <img src="../static/images/cryptocurrencies 1(1).png" alt="">
+            <h2>Crypto Promoters</h2>
+            <p>Convince Clients to invest Crypto currencies
+                through our company. Follow up the clients for
+                Investments and sales.</p>
+            <a href="./crypto.html"><h4 class="cl">120 Job Vacancy</h4></a>
+
+        </div>
+        <div class="box2">
+            <img src="../static/images/resources 1(1).png" alt="">
+            <h2>Human Resources</h2>
+            <p>Find and Recruit qualified candidates for the
+                company, Interview them and maintain records.</p>
+            <a href=""><h4 class="cl">100 Job Vacancy</h4></a>
+        </div>
+        <div class="box2">
+            <img src="../static/images/customer-support 1(1).png" alt="">
+            <h2>Promotion Models</h2>
+            <p>Answering customer’s questions, with warm and
+                thoughtful attitude and improve customer retention
+                through excellent support service.</p>
+            <a href=""><h4 class="cl">110 Job Vacancy</h4></a>
+        </div>
+        <div class="box2">
+            <img src="../static/images/sales-funnel 1(1).png" alt="">
+            <h2>Digital Sales and marketing</h2>
+            <p>Find people across the world and promote the tasks
+                company asks for, reach sales targets and perform marketing as well.</p>
+            <a href=""><h4 class="cl">90 Job Vacancy</h4></a>
+        </div>
+        <div class="box2">
+            <img src="../static/images/translator 1(1).png" alt="">
+            <h2>Translators</h2>
+            <p>Translating Chinese and English wherever required and
+                whenever asked for.</p>
+                <a href=""><h4 class="cl">70 Job Vacancy</h4></a>
+        </div>
+        <div class="box2">
+            <img src="../static/images/cryptocurrencies 1(1).png" alt="">
+            <h2>Crypto Promoters</h2>
+            <p>Convince Clients to invest Crypto currencies
+                through our company. Follow up the clients for
+                Investments and sales.</p>
+            <a href="./crypto.html"><h4 class="cl">120 Job Vacancy</h4></a>
+
+        </div>
+   </div>
+
+    <div class="box1">
+         <div class="box2">
+             <img src="../static/images/cryptocurrencies 1(1).png" alt="">
+             <h2>Crypto Promoters</h2>
+             <p>Convince Clients to invest Crypto currencies
+                 through our company. Follow up the clients for
+                 Investments and sales.</p>
+             <a href="./crypto.html"><h4 class="cl">120 Job Vacancy</h4></a>
+ 
+         </div>
+         <div class="box2">
+             <img src="../static/images/resources 1(1).png" alt="">
+             <h2>Human Resources</h2>
+             <p>Find and Recruit qualified candidates for the
+                 company, Interview them and maintain records.</p>
+             <a href=""><h4 class="cl">100 Job Vacancy</h4></a>
+         </div>
+         <div class="box2">
+             <img src="../static/images/customer-support 1(1).png" alt="">
+             <h2>Promotion Models</h2>
+             <p>Answering customer’s questions, with warm and
+                 thoughtful attitude and improve customer retention
+                 through excellent support service.</p>
+             <a href=""><h4 class="cl">110 Job Vacancy</h4></a>
+         </div> -->
+    </div>
+</section>
+
+
+
+{%endblock%}
+<script src="./menu.js"></script>
+
+
+
+</body>
+</html>
